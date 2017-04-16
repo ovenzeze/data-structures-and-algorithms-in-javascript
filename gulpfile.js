@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 const babel = require('gulp-babel');
-const stylus = requ ire('gulp-stylus');
+const stylus = require('gulp-stylus');
 const browserSync = require('browser-sync');
 const autoprefixer = require('gulp-autoprefixer');
 

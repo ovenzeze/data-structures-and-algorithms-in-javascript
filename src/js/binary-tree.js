@@ -136,7 +136,6 @@ function find(data) {
   }
   return null;
 };
-
  let nums = new BST();
  nums.insert(23);
  nums.insert(16);
