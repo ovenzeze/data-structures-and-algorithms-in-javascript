@@ -138,7 +138,6 @@ function find(data) {
  preOrder(nums.root);
  console.log("后序遍历");
  postOrder(nums.root);
- console.log(`最小深度为：${minDepths(nums.root)}`);
  console.log(`最小值为：${nums.getMin()}`);
  console.log(`最大值为：${nums.getMax()}`);
  console.log(`指定值所在的节点为：${nums.find(3)}`);
