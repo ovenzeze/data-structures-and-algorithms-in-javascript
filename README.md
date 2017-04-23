@@ -1,8 +1,8 @@
 # data-structures-and-algorithms-in-frontend
 基本数据结构和算法的前端实现（the implementation of basic data structure and  algorithm in JavaScript)
 >>   
-推荐参考书**数据结构与算法JavaScript描述**
-不断完善中
+推荐参考书**数据结构与算法JavaScript描述**    
+  不断完善中
 
 # 数据结构
 
@@ -20,6 +20,7 @@
  * 单向链表的实现(`linked-list.js`)
  * 双向链表的实现(`doubly-linked-list.js`)
  * 单向循环链表的实现（`singly-linked-circular-list.js`）
+ * 双向循环链表的实现（`doubly-linked-circular-list.js`）
 
 
  ## 列表
