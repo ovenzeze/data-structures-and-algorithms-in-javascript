@@ -1,5 +1,5 @@
 // 循环链表
-//基本实现和单向链表相同，主要区别是
+//基本实现和单向链表相同，主要区别是循环链表的最后一个节点指向头结点
 function Node(element) {
   this.element = element;
   this.next = null;
@@ -22,8 +22,10 @@ function linkedList() {
     }
   }
 
+  // find given item in linkedList and return Node
   function find(item) {
     let currNode = this.head;
+    //退出循环可能是找到与item相同的值或到了链表的最后一个元素了，再判断一下当前值是否是item即可
     while(currNode.element != item && currNode.next.element != "head") {
         currNode = currNode.next;
     }
@@ -33,9 +35,59 @@ function linkedList() {
     return -1;
   }
 
-  function insert(data) {
-
+  // insert element after the given item,return true or false
+  function insert(insertElement,item) {
+    let newNode = new Node(insertElement);
+    let insertPos = this.find(item);
+    if(insertPos == -1) {
+      return false;
+    }else if(insertPos.next.element == "head") {
+      insertPos.next = newNode;
+      newNode.next = this.head;
+      return true;
+    }else {
+      newNode.next = insertPos.next;
+      insertPos.next = newNode;
+      return true;
+    }
   }
 
+  // find the previous Node of given item
+  function findPrev(item) {
+    let currNode = this.head;
+    while(currNode.next.element != item && currNode.next.element != "head") {
+      currNode = currNode.next;
+    }
+    if(currNode.next.element == item) {
+      return currNode;
+    }
+    return -1;
+  }
+
+  // remove the Node contain given item,return true or false
+  function remove(item) {
+    let removePosPrev = this.findPrev(item);
+    let removePos = this.find(item);
+    if(removePosPrev == -1) {
+      return false;
+    }else if (removePos.next.element == "head") {
+      removePosPrev.next = this.head;
+      return true;
+    }else {
+      removePosPrev.next = removePos.next;
+      return true;
+    }
+  }
 
 }
+// test
+let linkedListTest = new linkedList();
+linkedListTest.insert("oven", "head");
+linkedListTest.insert("ovenzeze", "oven");
+linkedListTest.insert("ovenerly", "ovenzeze");
+linkedListTest.insert("chanzen", "ovenerly");
+linkedListTest.insert("chanzen.zhang", "chanzen");
+linkedListTest.display();
+linkedListTest.remove("chanzen.zhang");
+console.log("after remove [chanzen.zhang]");
+linkedListTest.display();
