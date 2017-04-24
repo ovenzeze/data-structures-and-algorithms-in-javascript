@@ -22,7 +22,6 @@ function BST() {
   this.inOrder = inOrder; //中序遍历
   this.preOrder = preOrder; //先序遍历
   this.postOrder = postOrder; //后序遍历
-  this.minDepths = minDepths; //查找二叉树最小深度
   this.getMax = getMax;
   this.getMin = getMin;
   this.find = find;
@@ -91,19 +90,6 @@ function postOrder(node) {
     console.log(node.show());
   }
 };
-// 查找二叉树最小深度
-// 根节点为空，返回0；
-// 只有左（右）子节点，返回1；
-// 如果左右节点都不为空，则分别计算左子树和右子数的深度，最小深度就是这两者的深度中的较小值；
-function minDepths(node, minDeep) {
-  minDeep = minDeep ? minDeep : 1;
-  if (node.left == null || node.right == null) {
-    return minDeep;
-  } else {
-    minDeep++;
-    return Math.min(minDepths(node.left, minDeep), minDepths(node.right, minDeep));
-  }
-};
 
 // 查找二叉树最大值
 function getMax() {
@@ -123,7 +109,7 @@ function getMin() {
   return currentNode.data;
 };
 
-// 在二叉树查找给定值
+// 在二叉搜索树查找给定值
 function find(data) {
   var current = this.root;
   while (current != null) {
@@ -153,7 +139,6 @@ console.log("先序遍历");
 preOrder(nums.root);
 console.log("后序遍历");
 postOrder(nums.root);
-console.log("\u6700\u5C0F\u6DF1\u5EA6\u4E3A\uFF1A" + minDepths(nums.root));
 console.log("\u6700\u5C0F\u503C\u4E3A\uFF1A" + nums.getMin());
 console.log("\u6700\u5927\u503C\u4E3A\uFF1A" + nums.getMax());
 console.log("\u6307\u5B9A\u503C\u6240\u5728\u7684\u8282\u70B9\u4E3A\uFF1A" + nums.find(3));
