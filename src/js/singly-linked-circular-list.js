@@ -22,7 +22,7 @@ function linkedList() {
     }
   }
 
-  // find given item in linkedList and return Node
+  // find the Node contain given item in linkedList and return Node
   function find(item) {
     let currNode = this.head;
     //退出循环可能是找到与item相同的值或到了链表的最后一个元素了，再判断一下当前值是否是item即可
@@ -52,7 +52,7 @@ function linkedList() {
     }
   }
 
-  // find the previous Node of given item
+  // find the previous one of the Node contain given item,return the previous Node
   function findPrev(item) {
     let currNode = this.head;
     while(currNode.next.element != item && currNode.next.element != "head") {

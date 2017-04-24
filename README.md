@@ -1,14 +1,15 @@
 # data-structures-and-algorithms-in-frontend
-基本数据结构和算法的前端实现（the implementation of basic data structure and  algorithm in JavaScript)
+基本数据结构和算法的前端实现（the implementation of basic data structure and  algorithm in JavaScript)[不断补充中]
 >>   
-推荐参考书**数据结构与算法JavaScript描述**    
-  不断完善中
+推荐给前端工程师的参考书  **数据结构与算法JavaScript描述**    
+所有代码在`src/js`目录下
 
 # 数据结构
 
  ## 树
  * 二叉树的实现（`binary-tree.js`）
  * 二叉查找树的实现（`binary-tree.js`）
+ * 检查二叉树是否是二叉查找树（`check-binary-tree-is-BST.js`）
  * 查找二叉树节点间的最大距离(`max-distance-in-binary-tree.js`)
  * 查找二叉树的最大宽度(`max-width-of-binary-tree.js`)
  * 查找二叉树的最小深度(`min-depths-of-binary-tree.js`)
@@ -16,11 +17,13 @@
  * 镜像翻转二叉树（`reverse-binary-tree.js`）
 
 
+
  ## 链表
  * 单向链表的实现(`linked-list.js`)
  * 双向链表的实现(`doubly-linked-list.js`)
  * 单向循环链表的实现（`singly-linked-circular-list.js`）
  * 双向循环链表的实现（`doubly-linked-circular-list.js`）
+ * 判断链表是否有环（`whether-exit-loop-in-linked-list.js`）
 
 
  ## 列表

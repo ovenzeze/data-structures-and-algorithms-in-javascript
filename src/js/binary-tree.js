@@ -108,7 +108,7 @@ function getMin() {
   return currentNode.data;
 };
 
-// 在二叉树查找给定值
+// 在二叉搜索树查找给定值
 function find(data) {
   let current = this.root;
   while(current != null) {
