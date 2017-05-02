@@ -31,6 +31,16 @@
    * clear(清空栈)
    * length(栈的长度)
 
+ ## 队列
+ * 队列的实现（`queue.js`）
+ 队列的基本操作：
+ * enqueue(向队尾添加元素)
+ * dequeue(删除队首的元素)
+ * front(读取队首元素)
+ * back(读取队尾元素)
+ * display(显示队列内所有元素)
+ * isEmpty(判断队列是否为空)
+
  ## 树
  * 二叉树的实现（`binary-tree.js`）
  * 二叉查找树的实现（`binary-tree.js`）
@@ -53,10 +63,11 @@
 
 # 算法
  ## 排序算法
- 排序算法在我的另一个仓库已经写得很详细了，这里就不重复写了。   
+ 排序算法在我的另一个总结里已经写得很详细了，这里就不重复写了。   
  请移步：   [usualSortAlgorithm](https://github.com/ovenzeze/usualSortAlgorithm)
  ## 检索算法
   * 二分查找(`bin-serach.js`)
+  * 自组织查找(`self-organization-search.js`)
 
 # 补充知识
   * 根据先序遍历和中序遍历结果画出二叉树（`print-binary-tree-with-preOrder-and-inOrder-traverse-result.md`）
