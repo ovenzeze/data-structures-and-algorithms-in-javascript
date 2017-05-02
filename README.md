@@ -6,6 +6,31 @@
 
 # 数据结构
 
+ ## 数组
+ JavaScript已经内建对数组的支持，并且由于JavaScript的灵活性，相比较其他语言的数组，还具有更多的玩法，大家可以自己探索。
+
+ ## 列表
+  * 列表的实现(`list.js`)   
+    列表的基本操作：
+    * append(在尾部添加元素)
+    * remove(从列表删除元素)
+    * find(在列表中查找某项元素)
+    * length(列表的长度)
+    * toString(显示列表中的元素)
+    * insert(向列表中插入一个元素)
+    * clear(清空列表中所有元素)
+    * contains(判断列表中是否存在给定值)
+
+
+ ## 栈
+ * 栈的实现（`stack.js`）   
+   栈的基本操作：
+   * push(入栈)
+   * pop(出栈)
+   * peek(返回栈顶元素)
+   * clear(清空栈)
+   * length(栈的长度)
+
  ## 树
  * 二叉树的实现（`binary-tree.js`）
  * 二叉查找树的实现（`binary-tree.js`）
@@ -26,11 +51,10 @@
  * 判断链表是否有环（`whether-exit-loop-in-linked-list.js`）
 
 
- ## 列表
-  * 列表的实现(`list.js`)
-
 # 算法
-
+ ## 排序算法
+ 排序算法在我的另一个仓库已经写得很详细了，这里就不重复写了。   
+ 请移步：   [usualSortAlgorithm](https://github.com/ovenzeze/usualSortAlgorithm)
  ## 检索算法
   * 二分查找(`bin-serach.js`)
 
