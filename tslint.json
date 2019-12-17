@@ -1,0 +1,36 @@
+{
+  "root": true,
+  "extends": "tslint:recommended",
+  "rules": {
+    "no-duplicate-imports": true,
+    "no-parameter-reassignment": false,
+    "trailing-comma": false,
+    "radix": false,
+    "ordered-imports": false,
+    "arrow-parens": false,
+    "no-console": [
+      false
+    ],
+    "semicolon": [
+      true,
+      "never"
+    ],
+    "indent": [true, "spaces", 2],
+    "object-literal-sort-keys": false,
+    "variable-name": false,
+    "quotemark": false,
+    "no-string-literal": false,
+    "cyclomatic-complexity": false,
+    "max-line-length": [
+      false
+    ],
+    "one-variable-per-declaration": false,
+    "max-classes-per-file": [
+      true,
+      5
+    ]
+  },
+  "linterOptions": {
+    "exclude": ["src/**/*.d.ts"]
+  }
+}

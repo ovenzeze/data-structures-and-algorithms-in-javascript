@@ -1,0 +1,24 @@
+{
+  "name": "data-structures-and-algorithms-in-javascript",
+  "version": "1.0.0",
+  "description": "the implementation of basic data structure and  algorithm in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ovenzeze/data-structures-and-algorithms-in-frontend.git"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4",
+    "tslint": "^5.12.0",
+    "typescript": "^3.2.2"
+  },
+  "author": "isake",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ovenzeze/data-structures-and-algorithms-in-frontend/issues"
+  },
+  "homepage": "https://github.com/ovenzeze/data-structures-and-algorithms-in-frontend#readme"
+}
