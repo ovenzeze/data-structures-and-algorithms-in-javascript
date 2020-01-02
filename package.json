@@ -4,7 +4,8 @@
   "description": "the implementation of basic data structure and  algorithm in JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=development nodemon ./index.js"
   },
   "repository": {
     "type": "git",

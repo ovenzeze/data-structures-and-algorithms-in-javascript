@@ -1,5 +1,5 @@
-# data-structures-and-algorithms-in-frontend
-基本数据结构和算法的前端实现（the implementation of basic data structure and  algorithm in JavaScript)[不断补充中]
+# data-structures-and-algorithms-in-javascript
+为前端工程师准备的数据结构和算法基础课，所有的数据结构和算法都通过`JavaScript`实现
 
 # 数据结构
 
@@ -7,54 +7,31 @@
 线性数据结构: 数组、栈、队列、链表   
 非线性数据结构: 树、图、散列(哈希表)、堆
 
- * 数组  
- JavaScript已经内建对数组的支持，并且由于JavaScript的灵活性，相比较其他语言的数组，还具有更多的玩法，大家可以自己探索。
+* 数组  
+  > 数组的定义是一个用来存储元素的线性集合。通过索引来计算数据在这个集合中存储的位置。为了保证数据存储和访问的高效，索引在这里只能是数字,可以通过索引计算偏移量从而快速访问到真实数据在内存里的位置。 
 
- * 栈
- 
-   栈的基本操作：
-   * push(入栈)
-   * pop(出栈)
-   * peek(返回栈顶元素)
-   * clear(清空栈)
-   * length(栈的长度)
+  但是在javaScript中,数组使用了对象的方式来实现,数字索引在使用和存储的时候被转换成字符串类型。其实很好理解,从设计上来讲,数组完全可以用key值为数组index的对象来表达。
 
- * 队列
- 队列的基本操作：
-   * enqueue(向队尾添加元素)
-   * dequeue(删除队首的元素)
-   * front(读取队首元素)
-   * back(读取队尾元素)
-   * display(显示队列内所有元素)
-   * isEmpty(判断队列是否为空)
+* 栈
+  > 栈可以简单理解为受限的数组,`栈是一种遵循后进先出(Last-In-First-Out, LIFO)的数据结构,每次只能访问或操作栈顶的元素`。类比到生活中，餐厅叠起来等待被清洗的盘子就是很形象的具象化表达。
+
+  对于栈，我们主要需要实现的方法包括: 入栈(push)、出栈(pop)、获取栈顶元素(peek)
+
+* 队列
+  > 和栈类似,队列也可以理解为一种受限的数组,`队列是一种遵循先进先出(First-In-First-Out, FIFO)的数据结构,每次只能访问或操作队首的元素,并在队尾添加元素`。类比到生活中,银行里排队等待办理业务的人员就是很形象的具象化表达。先进入的先被处理，后进入的后被处理，只能按照顺序来。
+
+  对于队列,我们主要需要实现的方法包括: 出队(shift)、入队(push)、获取队头元素(peek)
 
 * 链表
-  * 单向链表的实现(`linked-list.js`)
-  * 双向链表的实现(`doubly-linked-list.js`)
-  * 单向循环链表的实现（`singly-linked-circular-list.js`）
-  * 双向循环链表的实现（`doubly-linked-circular-list.js`）
-  * 判断链表是否有环（`whether-exit-loop-in-linked-list.js`）
+  > `链表是一种物理存储单元上,非连续、非顺序的存储结构,各个元素之间通过本身的链(指针)来关联`。链表包括,单向链表、双向链表、循环链表。   
+  类比数组,通过索引(偏移量)来关联,意味着数据必须存储在一段连续的存储空间里(这里只讨论数据结构定义里的数组),并且大小是固定的,否则通过偏移量来访问数据就不具有可靠性了。   
+  链表通过本身的链(指针)来访问,每一个节点都记录着下一个节点的位置,不依赖存储的连续性和顺序性,访问的时候从链表的头节点按顺序访问到尾结点就可以了。
+ 
+  对于链表,我们需要实现链表的节点(node)、链表节点的插入(insert)、链表节点的删除(delete)  
 
- * 树
-   * 二叉树的实现（`binary-tree.js`）
-   * 二叉查找树的实现（`binary-tree.js`）
-   * 检查二叉树是否是二叉查找树（`check-binary-tree-is-BST.js`）
-   * 查找二叉树节点间的最大距离(`max-distance-in-binary-tree.js`)
-   * 查找二叉树的最大宽度(`max-width-of-binary-tree.js`)
-   * 查找二叉树的最小深度(`min-depths-of-binary-tree.js`)
-   * 查找二叉树节点间的最小差值(`min-absolute-difference-in-binary-tree.js`)
-   * 镜像翻转二叉树（`reverse-binary-tree.js`）
+* 树
+* 散列
+* 图
 
- * 图
-
- * 散列(哈希表)
+* 堆
 # 算法
- ## 排序算法
- 排序算法在我的另一个总结里已经写得很详细了，这里就不重复写了。   
- 请移步：   [usualSortAlgorithm](https://github.com/ovenzeze/usualSortAlgorithm)
- ## 检索算法
-  * 二分查找(`bin-serach.js`)
-  * 自组织查找(`self-organization-search.js`)
-
-# 补充知识
-  * 根据先序遍历和中序遍历结果画出二叉树（`print-binary-tree-with-preOrder-and-inOrder-traverse-result.md`）
