@@ -5,16 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=development nodemon ./index.js"
+    "start": "NODE_ENV=development nodemon ./index.js",
+    "watch": "tsc --watch",
+    "build": "rm -rf ./dist && tsc"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ovenzeze/data-structures-and-algorithms-in-frontend.git"
   },
   "devDependencies": {
-    "nodemon": "^1.18.4",
+    "nodemon": "^2.0.2",
     "tslint": "^5.12.0",
-    "typescript": "^3.2.2"
+    "typescript": "^3.8.3"
   },
   "author": "isake",
   "license": "ISC",
