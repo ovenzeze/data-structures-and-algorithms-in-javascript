@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ovenzeze/data-structures-and-algorithms-in-frontend.git"
+    "url": "git+https://github.com/ovenzeze/data-structures-and-algorithms-in-javascript.git"
   },
   "devDependencies": {
     "nodemon": "^2.0.2",
@@ -21,7 +21,7 @@
   "author": "isake",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ovenzeze/data-structures-and-algorithms-in-frontend/issues"
+    "url": "https://github.com/ovenzeze/data-structures-and-algorithms-in-javascript/issues"
   },
-  "homepage": "https://github.com/ovenzeze/data-structures-and-algorithms-in-frontend#readme"
+  "homepage": "https://github.com/ovenzeze/data-structures-and-algorithms-in-javascript#readme"
 }
